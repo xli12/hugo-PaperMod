@@ -1,4 +1,4 @@
-{{- if and (hugo.IsProduction) (.site.Params.googleAnalyticsID) }}
+{{- if and (hugo.IsProduction) (site.Params.googleAnalyticsID) }}
 {{- partial "analytics-gtag.html" . }}
 {{- end }}
 
