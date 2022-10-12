@@ -35,6 +35,7 @@
         {{- partial "social_icons.html" site.Params.socialIcons -}}
 
         {{- with .buttons }}
+        <div>请选择文章类别：</div>
         <div class="buttons">
             {{- range . }}
             <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name }}">
